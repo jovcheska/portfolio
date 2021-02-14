@@ -1,0 +1,155 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+  height: 100vh;
+  padding: 30px 0;
+  position: relative;
+}
+
+.paddingLeftRight{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.menu li{
+    float: left;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.centerVertically{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main{
+    font-size: 50px;
+    font-weight: 900;
+    width: 100%;
+}
+
+.index .main{
+    line-height: 65px;
+}
+
+.main .threeDots{
+    color: #ed5c46;
+}
+
+.main .contact{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.main .contact img{
+    margin-right: 20px
+}
+
+.projectBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.projectLeft, .projectRight{
+    width: 50%;    
+    height: 100vh;
+    float: left;
+}
+
+.projectLeft{
+    background-color: #f7e06c;
+}
+
+.mainProjectLeft, .mainProjectRight{
+    width: 50%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.projectImage{
+    width: 100%;
+    max-width: 500px;
+}
+
+.arrowLeft{
+    left: 20px;
+    width: 20%;
+    max-width: 100px;
+}
+
+.arrowRight{
+    right: 20px;
+    width: 20%;
+    max-width: 100px;
+}
+
+.projectText{
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.projectTitle{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.projectDescription{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#projects{
+    display: none;
+}
+
+#indexLink{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: auto;
+    }
+
+    .main{
+        position: initial;
+        transform: none;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    header{
+        margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="88" viewBox="0 0 88 88">
+  <g id="Group_5" data-name="Group 5" transform="translate(-186 -440.5)">
+    <g id="Group_4" data-name="Group 4" transform="translate(186 440.5)">
+      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(0 0)">
+        <circle id="Ellipse_11" data-name="Ellipse 11" cx="44" cy="44" r="44" fill="#030504"/>
+      </g>
+      <g id="Group_3" data-name="Group 3" transform="translate(11.909 20.285)">
+        <g id="Path_1" data-name="Path 1">
+          <path id="Path_8" data-name="Path 8" d="M231.708,545.514a1.016,1.016,0,0,1-.933-1.415l6.926-16.172L221.629,516.94a1.015,1.015,0,0,1,.573-1.853h21l6.01-14.036a1.015,1.015,0,0,1,1.9.094l4.4,13.943h23.337a1.015,1.015,0,0,1,1.015,1.015v28.4a1.015,1.015,0,0,1-2.031,0V517.117H256.157l8.553,27.076a1.015,1.015,0,0,1-1.541,1.144l-23.76-16.242-6.767,15.8A1.016,1.016,0,0,1,231.708,545.514Zm8.516-18.323L261.889,542l-7.861-24.884h-9.489Zm-14.738-10.075,13.029,8.907,3.814-8.907Zm19.922-2.031h7.978L250,504.365Z" transform="translate(-221.187 -500.434)" fill="#fff"/>
+        </g>
+        <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(45.629 1.151)">
+          <ellipse id="Ellipse_12" data-name="Ellipse 12" cx="3" cy="3.5" rx="3" ry="3.5" transform="translate(0.462 -0.436)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

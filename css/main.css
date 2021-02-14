@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif, 'Apple Emoji','Segoe UI Emoji';
+    font-size: 16px;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 540px) {
+  .social-icons {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+  .grid-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+  .grid-layout {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-link {
+    padding: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+.mr-16 {
+  margin-right: 16px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 540px;
+  height: 100%;
+}
+.project-link {
+  text-decoration: none;
+  color: #000;
+  padding: 30px;
+}
+.project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-content > div {
+  opacity: 0;
+  visibility: hidden;
+}
+.project-container:hover .project-content > div {
+  visibility: visible;
+  opacity: 1;
+}
+.project-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.project-desc {
+  margin-bottom: 0;
+}
+.img-fluid {
+  width:100%;
+  height: auto;
+}
+.case-study-bg,
+.case-study-bg-1 {
+  height: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.case-study-bg {
+  background-image: url("../assets/case-study-bg.jpg");
+}
+.case-study-bg-1 {
+  background-image: url("../assets/case-study-bg-2.jpg");
+}
+#indexLink{
+  display: none;
+}
+.projectBackground{
+  width: 100%;
+  display: none;
+}
+#projects{
+  display: none;
+}

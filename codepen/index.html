@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body class="index">
+
+    <div class="projectBackground">
+        <div class="projectLeft"></div>
+        <div class="projectRight"></div>
+    </div>
+
+    <div class="wrapper">
+        <header class="paddingLeftRight">
+            <img class="logo" src="img/Group 1.png" />
+            <ul class="menu">
+                <li><a id="projectLink">Projects</a></li>
+                <li><a id="indexLink">X</a></li>
+                <li><a href="#">About me</a></li>
+            </ul>
+        </header>
+
+        <div id="index" class="main centerVertically paddingLeftRight">
+            Hello <span id="nameChange">Stranger</span><span class="threeDots">...</span><br />
+            I'm Anastasija jovcheska, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel consequat
+            ligula
+            <div class="contact">
+                <img class="mail" src="img/Icon material-mail-outline.png" /> jovcheskaanastasija@gmail.com
+            </div>
+        </div>
+
+        <div id="projects" class="main centerVertically">
+            <div class="mainProjectLeft">
+                <img class="projectImage" src="img/7.png" />
+                <img class="arrowLeft centerVertically" src="img/Group 2.png" />
+            </div>
+            <div class="mainProjectRight">
+                <img class="projectImage" src="img/1661.png" />
+                <img class="arrowRight centerVertically" src="img/Group 3.png" />
+                <div class="projectText">
+                    <div class="projectTitle">Title of project</div>
+                    <div class="projectDescription">Description of project</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#projectLink").click(
+            function () {
+                $(".projectBackground").slideDown();
+                $("#projects").fadeIn();
+                $("#index").fadeOut();
+                $("#projectLink").hide();
+                $("#indexLink").show();
+            }
+        );
+
+        $("#indexLink").click(
+            function () {
+                $(".projectBackground").slideUp();
+                $("#projects").fadeOut();
+                $("#index").fadeIn();
+                $("#projectLink").show();
+                $("#indexLink").hide();
+            }
+        );
+
+        var iminja = ["Gorjan", "Bojan", "Aleksandra", "Damjan"];
+        var pozicija = 0;
+        setInterval(function () {
+            $("#nameChange").text(iminja[pozicija]);
+            pozicija = pozicija + 1;
+            if (pozicija >= iminja.length) {
+                pozicija = 0;
+            }
+        }, 1000);
+
+    </script>
+</body>
+
+</html>
